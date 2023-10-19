@@ -1,22 +1,25 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int inc(int counter)
-{
-    counter++;
-    return counter;
+
+int counter;
+
+void set_counter()
+{ 
+     counter = 20;
 }
 
 int main(int argc, char *argv[])
 {
-  int i = 10;
-  printf("hamsoo hochul jeon i=%d\n",i);
+  printf("counter = %d\n", counter);
   
-  i = inc(i);//oh wow~
-  printf("hamsoo hochul hu i=%d\n",i);
+  set_counter();
+  
+  printf("counter = %d\n", counter);
   
   system("PAUSE");	
   return 0;
 }
 
-//call by vlaue !!!!!!!!!!!!!!!!!!t
+//지역변수 말고~ 전역변수면~
+//실습 3과 차이남요  
