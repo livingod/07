@@ -8,6 +8,7 @@ int main(int argc, char *argv[])
   
   for(i=0;i<5;i++)//5beon dol a~ 
   {
+    //static int temp = 1
     printf("temp = %d\n",temp);
     temp++;
 }
