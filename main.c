@@ -2,24 +2,25 @@
 #include <stdlib.h>
 
 
-int counter;
 
-void set_counter()
-{ 
-     counter = 20;
+void f()
+{
+   int i;
+   for(i=0;i<10;i++)
+      printf("#");
 }
 
 int main(int argc, char *argv[])
-{
-  printf("counter = %d\n", counter);
-  
-  set_counter();
-  
-  printf("counter = %d\n", counter);
-  
+{ 
+  int i;
+  for(i=0;i<5;i++)
+  {
+    f();
+  }
+                  
   system("PAUSE");	
   return 0;
 }
 
-//지역변수 말고~ 전역변수면~
-//실습 3과 차이남요  
+ 
+
